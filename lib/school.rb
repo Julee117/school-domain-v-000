@@ -11,12 +11,12 @@ class School
 
   def add_student(name, grade)
     # roster[grade] ||= []
-    @roster[grade] = [] unless @roster.keys.include?(grade)
-    @roster[grade] << name
+    roster[grade] = [] unless roster.keys.include?(grade)
+    roster[grade] << name
   end
 
   def grade(num)
-    @roster[num]
+    roster[num]
   end
 
   def sort
